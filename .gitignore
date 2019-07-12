@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# minhas configurações
+.gitignore
+Pipfile
+novo_arquivo.txt
