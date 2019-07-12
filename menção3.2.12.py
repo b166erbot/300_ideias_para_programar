@@ -1,5 +1,5 @@
 def main():
-    nota = float(input('informe uma nota: '))
+    nota = float(input('informe uma nota: ').replace(',', '.'))
     if 9 <= nota <= 10:
         print('SS(superior)')
     elif 7 <= nota <= 8.9:

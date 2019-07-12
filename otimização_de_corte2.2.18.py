@@ -2,7 +2,7 @@ def main():
     tábuas = []
     nova_entrada = True
     while nova_entrada:
-        a = float(input('tamanho da tábua: ')) * 10000
+        a = float(input('tamanho da tábua: ').replace(',', '.')) * 10000
         b = int(input(f'quantidade de tábuas: '))
         tábuas.append((a, b))
         if input('nova entrada? [s/n]: ').lower() == 's':

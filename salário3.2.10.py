@@ -1,6 +1,6 @@
 def main():
-    valor = float(input('valor: '))
-    horas = float(input('horas extras: '))
+    valor = float(input('valor: ').replace(',', '.'))
+    horas = float(input('horas extras: ').replace(',', '.'))
     valor += (valor / 176) * horas * 1.5
     inss = valor * 10 / 100
     inss = inss if inss <= 150 else 150

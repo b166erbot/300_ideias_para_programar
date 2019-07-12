@@ -1,7 +1,7 @@
 def main():
     entrada = input('Digite as duas notas: ').split()
     primeira = sum((int(a) * b for a, b in zip(entrada, (1, 2)))) / 3
-    entrada = float(input('Digite a próxima nota: '))
+    entrada = float(input('Digite a próxima nota: ').replace(',', '.'))
     média = (primeira * 2 + entrada * 8) / 10
     print(f"média: {média:0.1f}")
 

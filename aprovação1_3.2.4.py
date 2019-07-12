@@ -1,6 +1,6 @@
 def main():
     disciplina = input('digite o nome da disciplina: ')
-    nota = float(input('digite sua respectiva nota: ')) * 0.5
+    nota = float(input('digite sua respectiva nota: ').replace(',', '.')) * 0.5
     if 5 <= nota <= 10:
         print(f'você foi aprovado na disciplina {disciplina}')
     elif 4 <= nota <= 4.5:

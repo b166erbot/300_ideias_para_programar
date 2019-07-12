@@ -3,7 +3,7 @@ def main():
     if not all((0 <= a <= 10 for a in entrada)):
         raise ValueError('notas fora do intervalo 0 / 10')
     primeira = sum((a * b for a, b in zip(entrada, (1, 2)))) / 3
-    entrada = float(input('Digite a próxima nota: '))
+    entrada = float(input('Digite a próxima nota: ').replace(',', '.'))
     if not 0 <= entrada <= 10:
         raise ValueError('nota fora do intervalo 0 / 10')
     média = (primeira * 2 + entrada * 8) / 10

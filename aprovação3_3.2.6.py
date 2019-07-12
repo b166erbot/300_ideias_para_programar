@@ -1,6 +1,6 @@
 def main():
     disciplina = input('digite o nome da disciplina: ')
-    nota = float(input('digite sua respectiva nota: ')) * 0.5
+    nota = float(input('digite sua respectiva nota: ').replace(',', '.')) * 0.5
     aulas = int(input('digite a quantidade de áulas: '))
     faltas = int(input('digite a quantidade de faltas: '))
     if nota not in range(21):

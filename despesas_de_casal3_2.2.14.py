@@ -1,8 +1,8 @@
 def main():
-    marido = float(input('despesas do marido: '))
-    esposa = float(input('despesas da esposa: '))
-    marido_r = float(input('renda do marido: '))
-    esposa_r = float(input('renda da esposa: '))
+    marido = float(input('despesas do marido: ').replace(',', '.'))
+    esposa = float(input('despesas da esposa: ').replace(',', '.'))
+    marido_r = float(input('renda do marido: ').replace(',', '.'))
+    esposa_r = float(input('renda da esposa: ').replace(',', '.'))
     total_r = marido_r + esposa_r
     total = marido + esposa
     marido_p = marido * 100 / total

@@ -1,5 +1,5 @@
 def main():
-    salario = float(input('salário: ')) - 1200
+    salario = float(input('salário: ').replace(',', '.')) - 1200
     if salario > 0:
         primeiro = salario if salario <= 3799 else 3799
         roubo1 = primeiro / 100 * 10
