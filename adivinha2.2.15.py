@@ -4,7 +4,7 @@ def main():
     for frase in frases:
         print(frase)
         input('aperte enter para continuar.')
-    número = int(input('quanto deu?: ')) - 3
+    número = ((int(input('quanto deu?: ')) * 2) + 6) / 2
     print(f'você pensou no número {número}!')
 
 
